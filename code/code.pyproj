@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d3397cbb-acac-4c73-810b-2449fa288466}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>chap01ex.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="analytic.py" />
+    <Compile Include="brfss.py" />
+    <Compile Include="chap01ex.py" />
+    <Compile Include="chap01soln.py" />
+    <Compile Include="chap02ex.py" />
+    <Compile Include="chap02soln.py" />
+    <Compile Include="chap03soln.py" />
+    <Compile Include="chap06soln.py" />
+    <Compile Include="chap07soln.py" />
+    <Compile Include="chap08soln.py" />
+    <Compile Include="chap09soln.py" />
+    <Compile Include="chap12soln.py" />
+    <Compile Include="chap13soln.py" />
+    <Compile Include="chap14soln.py" />
+    <Compile Include="cumulative.py" />
+    <Compile Include="density.py" />
+    <Compile Include="estimation.py" />
+    <Compile Include="first.py" />
+    <Compile Include="hinc.py" />
+    <Compile Include="hinc2.py" />
+    <Compile Include="hinc_soln.py" />
+    <Compile Include="hypothesis.py" />
+    <Compile Include="linear.py" />
+    <Compile Include="mystery.py" />
+    <Compile Include="normal.py" />
+    <Compile Include="nsfg.py" />
+    <Compile Include="nsfg2.py" />
+    <Compile Include="populations.py" />
+    <Compile Include="probability.py" />
+    <Compile Include="regression.py" />
+    <Compile Include="relay.py" />
+    <Compile Include="relay_soln.py" />
+    <Compile Include="scatter.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="survival.py" />
+    <Compile Include="survival_test.py" />
+    <Compile Include="test_models.py" />
+    <Compile Include="thinkplot.py" />
+    <Compile Include="thinkplot_test.py" />
+    <Compile Include="thinkstats2.py" />
+    <Compile Include="thinkstats2_test.py" />
+    <Compile Include="timeseries.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

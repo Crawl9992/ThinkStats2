@@ -56,3 +56,8 @@ docs/_build/
 *.eps
 *.png
 *~
+
+# Custom Python paths to ignore
+/code/.ipynb_checkpoints/
+/.vs/
+/code/.vs/
